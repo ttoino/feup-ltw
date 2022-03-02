@@ -2,7 +2,7 @@
 
 Weekly exercises from the LTW course unit at FEUP.
 
-Exercise descriptions provided.
+Exercise descriptions provided (adapted from the [course unit website](https://web.fe.up.pt/~arestivo/page/courses/ltw/)).
 
 ## Unit info
 

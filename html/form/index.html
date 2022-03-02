@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="index.html" method="get">
+            <label>
+                Name:
+                <input type="text" name="name" />
+            </label>
+            <fieldset>
+                <legend>Age</legend>
+                <label>
+                    <input type="radio" name="age" value="<18" />
+                    &lt;18
+                </label>
+                <label>
+                    <input type="radio" name="age" value="19-35" />
+                    19-35
+                </label>
+                <label>
+                    <input type="radio" name="age" value="36-48" />
+                    36-48
+                </label>
+                <label>
+                    <input type="radio" name="age" value=">49" />
+                    &gt;49
+                </label>
+            </fieldset>
+            <label>
+                Profession:
+                <input type="text" name="profession" />
+            </label>
+            <label>
+                Country:
+                <select name="country">
+                    <option value="pt">Portugal</option>
+                    <option value="es">Spain</option>
+                    <option value="fr">France</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="de">Germany</option>
+                    <option value="it">Italy</option>
+                    <option value="ir">Ireland</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="ch">Switzerland</option>
+                    <option value="cz">Czechia</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Interests</legend>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interests"
+                        value="programming"
+                    />
+                    Programming
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="music" />
+                    Music
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="sports" />
+                    Sports
+                </label>
+                <label>
+                    <input type="checkbox" name="interests" value="binging" />
+                    Binging series
+                </label>
+            </fieldset>
+            <label>
+                How did you find out about this website?
+                <textarea name="reason" cols="60" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
