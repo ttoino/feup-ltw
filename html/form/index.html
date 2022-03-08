@@ -10,7 +10,7 @@
         <form action="index.html" method="get">
             <label>
                 Name:
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
             </label>
             <fieldset>
                 <legend>Age</legend>
@@ -33,11 +33,19 @@
             </fieldset>
             <label>
                 Profession:
-                <input type="text" name="profession" />
+                <input type="text" name="profession" list="professions" />
+                <datalist id="professions">
+                    <option>Programmer</option>
+                    <option>Teacher</option>
+                    <option>Pharmacist</option>
+                    <option>Doctor</option>
+                    <option>Discord admin</option>
+                </datalist>
             </label>
             <label>
                 Country:
-                <select name="country">
+                <select name="country" required>
+                    <option value="">Please select an option</option>
                     <option value="pt">Portugal</option>
                     <option value="es">Spain</option>
                     <option value="fr">France</option>
@@ -77,7 +85,7 @@
                 How did you find out about this website?
                 <textarea name="reason" cols="60" rows="10"></textarea>
             </label>
-            <input type="submit" value="Submit" />
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
