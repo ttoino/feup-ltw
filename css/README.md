@@ -15,12 +15,12 @@ We will start by designing the main components of the main page without worrying
 **Take notice that:**
 
 - The green background is **not** part of the design. The site should occupy the whole width of the browser.
-- It's not noticeable on the screenshot, but section links should change their background color to `#2A2F33` and their text color to white when the mouse is over them.
+- It's not noticeable on the screenshot, but section links should change their background color to ![#2A2F33](https://via.placeholder.com/12/2A2F33/000000?text=+) `#2A2F33` and their text color to white when the mouse is over them.
 
 **Some helper values:**
 
-- Main colors used: `#2A2F33`, `#046DD5` and `#F4655F`.
-- Section colors: `#E1493E`, `#8ABA56`, `#5B4282`, `#FF8932`, `#19B6E9` and `#E84C8B`.
+- Main colors used: ![#2A2F33](https://via.placeholder.com/12/2A2F33/000000?text=+) `#2A2F33`, ![#046DD5](https://via.placeholder.com/12/046DD5/000000?text=+) `#046DD5` and ![#F4655F](https://via.placeholder.com/12/F4655F/000000?text=+) `#F4655F`.
+- Section colors: ![#E1493E](https://via.placeholder.com/12/E1493E/000000?text=+) `#E1493E`, ![#8ABA56](https://via.placeholder.com/12/8ABA56/000000?text=+) `#8ABA56`, ![#5B4282](https://via.placeholder.com/12/5B4282/000000?text=+) `#5B4282`, ![#FF8932](https://via.placeholder.com/12/FF8932/000000?text=+) `#FF8932`, ![#19B6E9](https://via.placeholder.com/12/19B6E9/000000?text=+) `#19B6E9` and ![#E84C8B](https://via.placeholder.com/12/E84C8B/000000?text=+) `#E84C8B`.
 - Fonts used: [Lora](https://fonts.google.com/specimen/Lora) and [Poppins](https://fonts.google.com/specimen/Poppins).
 - Most paddings and margins are *1em*.
 
@@ -48,7 +48,7 @@ The final result should be [this](https://web.fe.up.pt/~arestivo/page/exercises/
 
 **Some helper values:**
 
-- The background color is `#EDEFF0`.
+- The background color is ![#EDEFF0](https://via.placeholder.com/12/EDEFF0/000000?text=+) `#EDEFF0`.
 - The width of the page is *60em*.
 - The sidebar occupies 1/5 of the total width.
 
