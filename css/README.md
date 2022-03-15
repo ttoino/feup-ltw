@@ -199,9 +199,20 @@ What is the color value (including inherit) assigned to each element:
 
 ### 3.5 Final Color
 
-What is the final color value presented in the browser:
+What is the **final color value** presented in the browser:
 
 1. first link:
 2. second link:
 3. third link:
 4. fourth link:
+
+### 4. Extra
+
+Let's continue exercise [5. Extra](/html#5-extra):
+
+1. Pick a page from a website you use a lot.
+2. Without looking at its HTML code, try writing your own version using good HTML semantics.
+3. [Validate](https://validator.w3.org/) the HTML code.
+4. Using CSS, create a design for that page.
+5. Make sure the design works in devices of different sizes.
+6. [Validate](https://jigsaw.w3.org/css-validator/) your CSS code.
