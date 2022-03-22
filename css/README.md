@@ -141,12 +141,12 @@ Consider the following HTML code:
 And the following CSS rules:
 
 ```css
-section ul li               { color : green }    /*R1*/
-.bar .second                { color : red }      /*R2*/
-li a                        { color : cyan }     /*R3*/
-section li:first-child ~ li { color : yellow }   /*R4*/
-#foo .bar li :first-child   { color : inherit }  /*R5*/
-.bar li                     { color : magenta }  /*R6*/
+section ul li               { color : green }    /* R1 (0, 0, 3) */
+.bar .second                { color : red }      /* R2 (0, 2, 0) */
+li a                        { color : cyan }     /* R3 (0, 0, 2) */
+section li:first-child ~ li { color : yellow }   /* R4 (0, 1, 3) */
+#foo .bar li :first-child   { color : inherit }  /* R5 (1, 2, 1) */
+.bar li                     { color : magenta }  /* R6 (0, 1, 1) */
 ```
 
 During this exercise, **don't try this code in the browser** until the end.
@@ -160,51 +160,51 @@ During this exercise, **don't try this code in the browser** until the end.
 
 What rules apply to each of the elements:
 
-1. section with id foo:
-2. ul with class bar:
-3. first list item:
-4. second list item:
-5. third list item:
-6. fourth list item:
+1. section with id foo: None
+2. ul with class bar: None
+3. first list item: R1, R6
+4. second list item: R1, R2, R4, R6
+5. third list item: R1, R4, R6
+6. fourth list item: R1, R4, R6
 
 ### 3.3 Selected Rule
 
 What is the rule with the highest specificity for each element:
 
-1. section with id foo:
-2. ul with class bar:
-3. first list item:
-4. second list item:
-5. third list item:
-6. fourth list item:
-7. first link:
-8. second link:
-9. third link:
-10. fourth link:
+1. section with id foo: None
+2. ul with class bar: None
+3. first list item: R6
+4. second list item: R2
+5. third list item: R4
+6. fourth list item: R4
+7. first link: R5
+8. second link: R5
+9. third link: R5
+10. fourth link: R5
 
 ### 3.4 Color Value
 
 What is the color value (including inherit) assigned to each element:
 
-1. section with id foo:
-2. ul with class bar:
-3. first list item:
-4. second list item:
-5. third list item:
-6. fourth list item:
-7. first link:
-8. second link:
-9. third link:
-10. fourth link:
+1. section with id foo: inherit
+2. ul with class bar: inherit
+3. first list item: magenta
+4. second list item: red
+5. third list item: yellow
+6. fourth list item: yellow
+7. first link: inherit
+8. second link: inherit
+9. third link: inherit
+10. fourth link: inherit
 
 ### 3.5 Final Color
 
 What is the **final color value** presented in the browser:
 
-1. first link:
-2. second link:
-3. third link:
-4. fourth link:
+1. first link: magenta
+2. second link: red
+3. third link: yellow
+4. fourth link: yellow
 
 ### 4. Extra
 
