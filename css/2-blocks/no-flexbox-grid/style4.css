@@ -1,0 +1,26 @@
+.style4.nfbg aside {
+    height: 8em;
+    clear: both;
+}
+
+.style4.nfbg main {
+    position: relative;
+    width: calc(100% - var(--sidebar-width));
+}
+
+.style4.nfbg #s2 {
+    top: 0;
+    right: 0;
+}
+
+.style4.nfbg section {
+    position: absolute;
+    width: 50%;
+}
+
+.style4.nfbg footer,
+.style4.nfbg aside {
+    float: right;
+    clear: both;
+    width: var(--sidebar-width);
+}

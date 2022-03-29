@@ -1,0 +1,21 @@
+.style2.nfbg aside {
+    float: right;
+    width: var(--sidebar-width);
+}
+
+.style2.nfbg main {
+    white-space: nowrap;
+    border-right: solid var(--sidebar-width) #f9c74f;
+}
+
+.style2.nfbg article {
+    float: left;
+    width: calc(33.333% - 2em);
+}
+
+.style2.nfbg section::after {
+    content: "\00a0";
+    clear: both;
+    display: block;
+    height: 0;
+}

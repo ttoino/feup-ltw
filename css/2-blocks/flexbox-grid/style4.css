@@ -1,0 +1,30 @@
+.style4.fbg {
+    display: grid;
+    grid-template:
+        "header header" auto
+        "nav nav" auto
+        "main aside" 8em
+        "main footer" auto
+        "main empty" auto
+        / 1fr var(--sidebar-width);
+}
+
+.style4.fbg header {
+    grid-area: header;
+}
+.style4.fbg nav {
+    grid-area: nav;
+}
+.style4.fbg main {
+    grid-area: main;
+    display: flex;
+}
+.style4.fbg section {
+    flex: 1;
+}
+.style4.fbg aside {
+    grid-area: aside;
+}
+.style4.fbg footer {
+    grid-area: footer;
+}

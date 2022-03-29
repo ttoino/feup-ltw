@@ -1,0 +1,29 @@
+.style3.nfbg {
+    position: relative;
+}
+
+.style3.nfbg header,
+.style3.nfbg nav {
+    width: calc(100% - var(--sidebar-width));
+    height: 4em;
+}
+
+.style3.nfbg aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--sidebar-width);
+    height: 8em;
+}
+
+.style3.nfbg main {
+    position: relative;
+    top: 6em;
+}
+
+.style3.nfbg footer {
+    position: absolute;
+    top: 8em;
+    width: 100%;
+    height: 6em;
+}

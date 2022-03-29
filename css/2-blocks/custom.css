@@ -1,0 +1,31 @@
+#style1:checked ~ div:not(.style1) {
+    display: none;
+}
+
+#style2:checked ~ div:not(.style2) {
+    display: none;
+}
+
+#style3:checked ~ div:not(.style3) {
+    display: none;
+}
+
+#style4:checked ~ div:not(.style4) {
+    display: none;
+}
+
+#fbg:checked ~ div.nfbg {
+    display: none;
+}
+
+#fbg:not(:checked) ~ div.fbg {
+    display: none;
+}
+
+:root {
+    --sidebar-width: 22em;
+}
+
+* {
+    box-sizing: border-box;
+}

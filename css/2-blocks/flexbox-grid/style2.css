@@ -1,0 +1,36 @@
+.style2.fbg {
+    display: grid;
+    grid-template:
+        "header header" auto
+        "nav nav" auto
+        "main aside" auto
+        "footer footer" auto/ 1fr var(--sidebar-width);
+}
+
+.style2.fbg header {
+    grid-area: header;
+}
+.style2.fbg nav {
+    grid-area: nav;
+}
+.style2.fbg main {
+    grid-area: main;
+}
+.style2.fbg aside {
+    grid-area: aside;
+}
+.style2.fbg footer {
+    grid-area: footer;
+}
+
+.style2.fbg section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.style2.fbg section h2 {
+    width: 100%;
+}
+.style2.fbg section article {
+    flex: 1;
+}

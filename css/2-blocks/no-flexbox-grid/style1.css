@@ -1,0 +1,8 @@
+.style1.nfbg aside {
+    float: right;
+    width: var(--sidebar-width);
+}
+
+.style1.nfbg main {
+    border-right: var(--sidebar-width) solid #f9c74f;
+}

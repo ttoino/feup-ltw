@@ -1,0 +1,25 @@
+.style3.fbg {
+    display: grid;
+    grid-template:
+        "header aside" auto
+        "nav aside" auto
+        "footer footer" auto
+        "main main" auto
+        / 1fr var(--sidebar-width);
+}
+
+.style3.fbg header {
+    grid-area: header;
+}
+.style3.fbg nav {
+    grid-area: nav;
+}
+.style3.fbg main {
+    grid-area: main;
+}
+.style3.fbg aside {
+    grid-area: aside;
+}
+.style3.fbg footer {
+    grid-area: footer;
+}
