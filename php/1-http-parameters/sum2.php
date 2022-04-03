@@ -14,7 +14,7 @@ $result = $num1 + $num2;
 </head>
 
 <body>
-    <p><?= $result ?></p>
+    <p><?= $num1 ?> + <?= $num2 ?> = <?= $result ?></p>
     <p><a href="form2.html">Do another sum.</a></p>
 </body>
 

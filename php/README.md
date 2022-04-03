@@ -15,7 +15,7 @@ This should already be set up in your classrooms' computers if you use Linux.
   4. Open PowerShell normally and run 'wsl'.
   5. Run 'sudo apt-get install php-cli sqlite3 php-sqlite3 unzip wget'.
 
-  ```console
+  ```shell
   wsl --install
   # reboot
   wsl
@@ -42,7 +42,7 @@ In windows you have to open a PowerShell and run 'wsl' first.
 
 Or just **run** this inside an empty folder:
 
-```console
+```shell
 php --version
 sqlite3 --version
 wget "https://web.fe.up.pt/~arestivo/page/exercises/php/test.zip"
@@ -73,7 +73,7 @@ php -S localhost:9000
   Open the file and see if you can understand what it does.
 5. Create a new database inside the folder using the command:
 
-   ```console
+   ```shell
    sqlite3 -init news.sql news.db
    ```
 
@@ -94,7 +94,7 @@ php -S localhost:9000
 8. Verify if a new file called **news.db** has been created using the command:
 9. To go back to the *SQLite* interface and interact with the new database type:
 
-   ```console
+   ```shell
    sqlite3 news.db
    ```
 
