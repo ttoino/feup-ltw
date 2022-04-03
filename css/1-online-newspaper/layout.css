@@ -1,17 +1,19 @@
 :root {
     background-color: var(--color-background);
+    height: 100%;
 }
 
 body {
     display: grid;
     max-width: 60em;
+    min-height: 100%;
     margin-inline: auto;
 
     grid-template:
-        "header header" auto
-        "nav related" auto
-        "news related" auto
-        "footer footer" auto
+        "header header" min-content
+        "nav related" min-content
+        "news related" 1fr
+        "footer footer" min-content
         / auto 20%;
 }
 
@@ -24,7 +26,9 @@ body > header {
     grid-template:
         "title signup" auto
         "subtitle signup" auto
-        / auto auto;
+        / auto calc((100% + 32px) / 5 - 32px);
+
+    padding: 16px;
 }
 
 body > header > h1 {
@@ -36,6 +40,12 @@ body > header > h2 {
 }
 
 #signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    min-width: 100%;
+
     grid-area: signup;
     align-self: end;
     justify-self: end;
@@ -65,7 +75,17 @@ nav ul > * {
     grid-area: news;
 }
 
-#news footer {
+#news > article > img {
+    width: 100%;
+}
+
+#news > article > header {
+    position: absolute;
+    width: 22ch;
+    padding: 24px;
+}
+
+#news > article > footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

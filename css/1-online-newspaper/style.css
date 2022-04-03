@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:600");
+@import url("https://res.cloudinary.com/dr6lvwubh/raw/upload/v1581441981/Anicons/anicons-regular.css");
 
 :root {
     --color-gray: #2a2f33;
@@ -13,7 +14,8 @@
     --color6: #e84c8b;
 
     --font-serif: "Lora", "Times New Roman", Times, serif;
-    --font-sans: "Poppins", Arial, Helvetica, sans-serif;
+    --font-sans: Arial, Helvetica, sans-serif;
+    --font-title: "Poppins", var(--font-sans);
 }
 
 * {
@@ -43,11 +45,14 @@ body > header {
     background-color: var(--color-header);
     color: white;
     font-family: var(--font-sans);
-    padding: 16px;
 }
 
-#signup {
-    margin-top: 12px;
+body > header > h1 {
+    font-weight: 700;
+}
+
+body > header > h2 {
+    font-weight: 400;
 }
 
 #signup > :first-child {
@@ -76,9 +81,9 @@ nav {
 }
 
 nav a {
-    border-top: 4px solid;
+    border-top: 6px solid;
     padding: 12px;
-    font-weight: 600;
+    font-weight: 400;
     width: 100%;
     display: block;
 }
@@ -129,39 +134,34 @@ nav ul li:nth-of-type(6) a {
 }
 
 /* NEWS */
-#news article {
+#news > article {
     margin-block: 16px;
     background-color: white;
 }
 
-#news img {
-    width: 100%;
-}
-
-#news header {
+#news > article > header {
     color: white;
-    position: absolute;
-    width: 22ch;
-    padding: 24px;
     text-shadow: 4px 4px 4px black;
+    font-size: 1.5em;
+    font-family: var(--font-title);
 }
 
-#news p {
+#news > article > p {
     margin: 16px;
 }
 
-#news p:first-of-type::first-letter {
+#news > article > p:first-of-type::first-letter {
     font-size: 2em;
 }
 
-#news footer {
+#news > article > footer {
     color: white;
     background-color: var(--color-footer);
     font-family: var(--font-sans);
     padding: 12px 16px;
 }
 
-#news footer a {
+#news > article > footer a {
     text-decoration: underline;
 }
 

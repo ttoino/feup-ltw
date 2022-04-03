@@ -1,0 +1,102 @@
+#comments {
+    padding: 1em;
+    gap: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#comments .comment {
+    display: grid;
+
+    grid-template:
+        "user date" auto
+        "comment comment" auto / auto auto;
+
+    gap: 1em;
+}
+
+#comments .comment .user {
+    grid-area: user;
+
+    font-style: italic;
+    font-family: var(--font-sans);
+}
+
+#comments .comment .user::after {
+    content: " said:";
+    font-style: initial;
+}
+
+#comments .comment .date {
+    grid-area: date;
+    justify-self: end;
+
+    font-family: var(--font-sans);
+}
+
+#comments .comment p {
+    grid-area: comment;
+
+    background-color: var(--color-background);
+    padding: 1em;
+}
+
+#comments .comment p::before {
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0;
+    position: relative;
+    top: 0.45em;
+    opacity: 0.3;
+}
+
+#comments form {
+    display: grid;
+    align-items: center;
+
+    grid-template:
+        "title title title title" auto
+        "username username-input email email-input" auto
+        "comment textarea textarea textarea" auto
+        "reply reply reply reply" auto / auto 1fr auto 1fr;
+
+    padding: 1em;
+    gap: 1em;
+
+    background-color: var(--color-background);
+    font-family: var(--font-sans);
+}
+
+#comments form h2 {
+    grid-area: title;
+}
+
+#comments form label {
+    display: contents;
+}
+
+#comments form input,
+#comments form textarea {
+    padding: 0.25em;
+}
+
+#comments form textarea {
+    grid-area: textarea;
+
+    resize: vertical;
+    min-height: 10em;
+}
+
+#comments form button {
+    grid-area: reply;
+    justify-self: end;
+
+    width: 100%;
+    max-width: 200px;
+
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1em;
+}

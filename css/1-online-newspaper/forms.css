@@ -1,0 +1,50 @@
+#login,
+#register {
+    grid-area: news;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+    padding: 2em;
+
+    height: 100%;
+}
+
+#login form,
+#register form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 24em;
+    padding: 2em;
+    gap: 2em;
+
+    background-color: white;
+    font-family: var(--font-sans);
+}
+
+#login button,
+#register button {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#login input,
+#register input {
+    display: block;
+
+    padding: 0.25em;
+    margin-top: 0.5em;
+    width: 100%;
+
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
