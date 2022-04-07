@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('sqlite:news.db');
+$db = new PDO('sqlite:../2-sqlite-db-creation/news.db');
 
 $stmt = $db->prepare('SELECT * FROM news');
 $stmt->execute();
