@@ -8,6 +8,7 @@ Exercise descriptions provided (adapted from the [course unit website](https://w
 
 * **Name**: Linguagens e Tecnologias Web (Web Languages and Technologies)
 * **Date**: Year 2, Semester 2, 2021/22
+* **See also**: [feup-ltw-proj](https://github.com/ttoino/feup-ltw-proj)
 * [**More info**](https://sigarra.up.pt/feup/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484427)
 
 ## Disclaimer
